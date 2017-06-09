@@ -1,0 +1,14 @@
+default: &default
+  adapter: mysql2
+  host: localhost
+  reconnect: true
+  username: haterslist
+  password: haterslist-ad438438
+  pool: 5
+  encoding: utf8
+  read_timeout: 20
+
+production:
+  <<: *default
+  database: haterslist
+

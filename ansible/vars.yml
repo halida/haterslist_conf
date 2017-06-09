@@ -1,0 +1,24 @@
+---
+config_path: "your_path_for_config_files/haterslist_conf"
+backup:
+  bareos_server_director_password: "RY4wN7EEgWnY4zkbXn25AE5DkzEf5DzeTiZGnd3YlmR6"
+  
+apps:
+  haterslist1:
+    name: haterslist
+    hostname: haterslist.llj.click
+    app_path: '/home/production/apps/haterslist'
+    config_path: '~/data/workspace/arch/haterslist_conf/app1/haterslist1/'
+    ruby: 'ruby-2.3.3'
+    service:
+      memory_limit: 512M
+
+dbs:
+  db1:
+    mysql_root_password: rand342u43543
+    databases:
+      - haterslist
+    users:
+      - name: haterslist
+        password: haterslist-ad438438
+        priv: 'haterslist.*:ALL'
