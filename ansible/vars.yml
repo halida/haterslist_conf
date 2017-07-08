@@ -22,3 +22,8 @@ dbs:
       - name: haterslist
         password: haterslist-ad438438
         priv: 'haterslist.*:ALL'
+
+zabbix:
+  mysql_root_password: rand342u43543
+  mysql_user_password: rand3429843543
+  server_ip: 192.168.56.10
